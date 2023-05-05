@@ -71,6 +71,7 @@ public class UserActivity extends BaseActivity<UserPresenter> implements UserCon
 
     @Override
     public void setupActivityComponent(@NonNull AppComponent appComponent) {
+        //https://www.ktanx.com/blog/p/4643  Dagger2的使用方法
         DaggerUserComponent
                 .builder()
                 .appComponent(appComponent)
