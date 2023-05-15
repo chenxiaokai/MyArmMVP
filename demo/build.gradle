@@ -89,4 +89,6 @@ dependencies {
     //test
     testImplementation rootProject.ext.dependencies["junit"]
     debugImplementation rootProject.ext.dependencies["canary-debug"]
+
+    implementation 'com.appsflyer:af-android-sdk:6.9.0'
 }
