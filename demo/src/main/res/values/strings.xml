@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">MVPArms</string>
+    <string name="app_name">Viddi</string>
+    <string name="splash_icon_name">Viddi</string>
+    <string name="log_google_text">Log in with Google</string>
+    <string name="log_vistor_text">Log int with Vistor</string>
+    <string name="log_under_text_1">Log in or Sign up to agree</string>
+    <string name="log_under_text_2">Terms of Service</string>
+    <string name="log_under_text_3">and</string>
+    <string name="log_under_text_4">Privacy Policy</string>
 </resources>
