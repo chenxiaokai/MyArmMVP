@@ -3,7 +3,7 @@
     android:id="@+id/rg_main"
     android:layout_width="match_parent"
     android:layout_height="49dp"
-    android:background="@color/white"
+    android:background="@color/bottom_bar_color"
     android:orientation="horizontal">
 
     <androidx.appcompat.widget.AppCompatRadioButton
@@ -20,7 +20,7 @@
         android:textSize="10sp" />
 
     <androidx.appcompat.widget.AppCompatRadioButton
-        android:id="@+id/rb_mian_forms"
+        android:id="@+id/rb_mian_history"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -32,20 +32,32 @@
         android:paddingTop="10dp"
         android:textSize="10sp" />
 
-<!--    <androidx.appcompat.widget.AppCompatRadioButton-->
-<!--        android:id="@+id/rb_mian_check_goods"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_weight="1"-->
-<!--        android:button="@null"-->
-<!--        android:checked="false"-->
-<!--        android:drawableTop="@drawable/selector_main_check_goods"-->
-<!--        android:drawablePadding="-2dp"-->
-<!--        android:gravity="center"-->
-<!--        android:paddingTop="10dp"-->
-<!--        android:text="查货"-->
-<!--        android:textColor="@drawable/selector_main_tab_text"-->
-<!--        android:textSize="10sp" />-->
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/rb_mian_find"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="false"
+        android:drawableTop="@drawable/selector_main_find"
+        android:drawablePadding="-2dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="10sp" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/rb_mian_msg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="false"
+        android:drawableTop="@drawable/selector_main_msg"
+        android:drawablePadding="-2dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="10sp" />
 
     <androidx.appcompat.widget.AppCompatRadioButton
         android:id="@+id/rb_mian_mine"
@@ -54,7 +66,7 @@
         android:layout_weight="1"
         android:button="@null"
         android:checked="false"
-        android:drawableTop="@drawable/selector_main_find"
+        android:drawableTop="@drawable/selector_main_mine"
         android:drawablePadding="-2dp"
         android:gravity="center"
         android:paddingTop="10dp"

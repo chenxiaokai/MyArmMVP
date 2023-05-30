@@ -2,5 +2,6 @@
 <resources>
     <color name="white">#FFFFFF</color>
     <color name="app_backgroud_color">#ff0e003e</color>
-
+    <color name="bottom_bar_color">#3C1B9A</color>
+    <color name="green_color">#28DE60</color>
 </resources>

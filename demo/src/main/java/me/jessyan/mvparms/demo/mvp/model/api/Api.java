@@ -27,4 +27,6 @@ package me.jessyan.mvparms.demo.mvp.model.api;
 public interface Api {
     String APP_DOMAIN = "https://api.github.com";
     String REQUEST_SUCCESS = "0";
+
+    String APP_HOST = "https://testapi.xiaohuang.link";
 }
