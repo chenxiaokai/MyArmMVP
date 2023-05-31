@@ -77,7 +77,7 @@ public class UserPresenter extends BasePresenter<UserContract.Model, UserContrac
      * 使用 2017 Google IO 发布的 Architecture Components 中的 Lifecycles 的新特性 (此特性已被加入 Support library)
      * 使 {@code Presenter} 可以与 {@link ComponentActivity} 和 {@link Fragment} 的部分生命周期绑定
      */
-    @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
+    @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)    //参考 http://michael007js.cn/news/shownews.php?id=85
     void onCreate() {
         requestUsers(true);//打开 App 时自动加载列表
     }
@@ -110,7 +110,8 @@ public class UserPresenter extends BasePresenter<UserContract.Model, UserContrac
             lastUserId = 1;//下拉刷新默认只请求第一页
         }
 
-        //关于RxCache缓存库的使用请参考 http://www.jianshu.com/p/b58ef6b0624b
+        //关于RxCache缓存库的使用请参考 http://www.jianshu.com/p/b58ef6b0624b  https://www.jianshu.com/p/91e2a622dce2
+        //Rxlifecycle的使用 https://blog.csdn.net/u013651026/article/details/84573633
 
         boolean isEvictCache = pullToRefresh;//是否驱逐缓存,为ture即不使用缓存,每次下拉刷新即需要最新数据,则不使用缓存
 

@@ -37,6 +37,7 @@ import me.jessyan.mvparms.demo.mvp.model.entity.User;
  */
 public interface CommonCache {
 
+    //关于RxCache缓存库的使用请参考 http://www.jianshu.com/p/b58ef6b0624b  https://www.jianshu.com/p/91e2a622dce2
     @LifeCache(duration = 2, timeUnit = TimeUnit.MINUTES)
     Observable<Reply<List<User>>> getUsers(Observable<List<User>> users, DynamicKey idLastUserQueried, EvictProvider evictProvider);
 }

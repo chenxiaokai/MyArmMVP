@@ -59,6 +59,7 @@ public class UserActivity extends BaseActivity<UserPresenter> implements UserCon
     RecyclerView mRecyclerView;
     @BindView(R.id.swipeRefreshLayout)
     SwipeRefreshLayout mSwipeRefreshLayout;
+
     @Inject
     RxPermissions mRxPermissions;
     @Inject
@@ -167,6 +168,7 @@ public class UserActivity extends BaseActivity<UserPresenter> implements UserCon
      */
     private void initPaginate() {
         if (mPaginate == null) {
+            //https://blog.csdn.net/qq_36955849/article/details/103142538  Paginate的使用
             Paginate.Callbacks callbacks = new Paginate.Callbacks() {
                 @Override
                 public void onLoadMore() {
