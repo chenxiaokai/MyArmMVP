@@ -41,6 +41,10 @@ public interface UserComponent {
 
     @Component.Builder
     interface Builder {
+        /*
+        https://blog.csdn.net/weixin_40763897/article/details/125506828
+        @BindsIntance 目的就是不再通过一个module类的构造函数来注入依赖，直接在component初始化时提供
+         */
         @BindsInstance
         UserComponent.Builder view(UserContract.View view);
 
